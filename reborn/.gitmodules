@@ -1,0 +1,12 @@
+[submodule "krill"]
+	path = krill
+	url = https://github.com/lee-plus-plus/krill.git
+[submodule "mias"]
+	path = mias
+	url = https://github.com/Adversarr/mias
+[submodule "mide"]
+	path = mide
+	url = https://github.com/Adversarr/mide.git
+[submodule "minisys-1a-linker"]
+	path = minisys-1a-linker
+	url = https://github.com/SwordLu/minisys-1a-linker.git

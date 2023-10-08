@@ -1,0 +1,343 @@
+// ...
+
+int TITLE_LENGTH = 100;                    // ...
+int AUTHOR_LENGTH = 100;                   // ...
+int PUBLISHER_LENGTH = 100;                // ...
+int ISBN_LENGTH = 14;                      //ISBN ...
+
+int NUM_ITEM_MAX = 100;                    // ...
+
+int FILENAME_LENGTH = 100;                 // ...
+int USERNAME_LENGTH = 100;                 // ...
+int PASSWORD_LENGTH = 100;                 // ...
+
+// ...
+const char filename[FILENAME_LENGTH] = "Gutenberg.lib";
+// ...
+const char username[100] = "admin";
+// ...
+const char password[100] = "password";
+
+
+// ...
+struct abc
+{
+    char title[TITLE_LENGTH];               // ...
+    char author[AUTHOR_LENGTH];             // ...
+    char publisher[PUBLISHER_LENGTH];       // ...
+    char ISBN[ISBN_LENGTH];                 //ISBN ...
+};
+
+char item[NUM_ITEM_MAX];                    // ...
+int numItem = 0;                            // ...
+                                            // ...
+
+
+/********* ...**********/
+
+
+// ...-1
+int fuzzySearch(char src[], int st);
+
+// ...
+int cmpItemByTitle(char x, char y);
+
+// ...
+void clear();   
+
+// ...
+void save();
+
+// ...
+void load();        
+
+// ...src ...
+void addItem(char src);
+
+// ...src ...index ...
+void editItemByIndex(int index, char src);
+
+// ...index ...
+void removeItemByIndex(int index);
+
+
+/********* ...**********/
+
+// ...-1
+int fuzzySearch(char src[], int st)
+{
+    for (int i = st; i < numItem; i++)
+        if (strcmp(item[i].title, src) == 0 || 
+            strcmp(item[i].author, src) == 0 || 
+            strcmp(item[i].publisher, src) == 0 || 
+            strcmp(item[i].ISBN, src) == 0)
+            return i;
+    return -1;
+}
+
+// ...
+int cmpItemByTitle(char x, char y)
+{
+    return strcmp(x.title, y.title) < 0;
+}
+
+// ...
+void clear()
+{
+    numItem = 0;
+}
+
+
+// ...src ...
+void addItem(char src)
+{
+    // ...
+    src.title[TITLE_LENGTH - 1] = '\0';
+    src.author[AUTHOR_LENGTH - 1] = '\0';
+    src.publisher[PUBLISHER_LENGTH - 1] = '\0';
+    src.ISBN[ISBN_LENGTH - 1] = '\0';
+
+    // ...
+    int i;
+    for (i = numItem - 1; i >= 0 && cmpItemByTitle(src, item[i]); i--)
+        item[i + 1] = item[i];
+    item[i + 1] = src;
+    numItem++;
+
+    save();
+}
+
+// ...src ...index ...
+void editItemByIndex(int index, char src)
+{
+    removeItemByIndex(index);
+    addItem(src);
+
+    save();
+}
+
+// ...index ...
+void removeItemByIndex(int index)
+{
+    for (int i = index; i < numItem - 1; i++)
+        item[i] = item[i + 1];
+    numItem--;
+
+    save();
+}
+
+
+/********* ...**********/
+
+// ...-1
+int inputCommand()
+{
+    char command[100] = "";
+    gets(command);
+    if (strlen(command) != 1)
+        return -1;
+    else
+        return command[0] - '0';
+}
+
+// ...index ...
+void printItem(int index)
+{
+}
+
+// ...
+char inputItem()
+{
+    char temp;
+
+
+    gets(temp.title);
+    gets(temp.author);
+    gets(temp.publisher);
+    gets(temp.ISBN);
+
+    return temp;
+}
+
+// ...index ...
+char inputItemWithComparison(int index)
+{
+    char temp;
+
+
+    gets(temp.title);
+    gets(temp.author);
+    gets(temp.publisher);
+    gets(temp.ISBN);
+    return temp;
+}
+
+// ...
+int confirm(const char src[])
+{
+    char temp[100] = "";
+    gets(temp);
+    return strcmp(temp, src) == 0;
+}
+
+
+/********* ...**********/
+
+
+int main()
+{
+    // ...
+    while (1)
+    {
+        char usernameInput[100] = "", passwordInput[100] = "";
+
+        gets(usernameInput);
+        gets(passwordInput);
+
+        if (strcmp(username, usernameInput) != 0)
+        {
+            continue;
+        }
+        else
+        {
+            if (strcmp(password, passwordInput) != 0)
+            {
+                continue;
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+    
+    // ...
+    load();
+
+    // ...
+    while (1)
+    {
+        
+        int cmd = inputCommand();
+        if (cmd == 1)
+        // ...
+        {
+            for (int i = 0; i < numItem; i++)
+                printItem(i);
+
+            if (numItem == 0)
+                a++;
+            else
+                b++;
+
+            continue;
+        }
+        else if (cmd == 2)
+        // ...
+        {
+            char temp = inputItem();
+
+            if (confirm("y"))
+            {
+                addItem(temp);
+            }
+            else
+            {
+            }
+            continue;
+        }
+        else if (cmd == 3)
+        // ...
+        {
+            char tgtTitle[100];
+            gets(tgtTitle);
+
+            int numFound = 0;
+            for (int i = fuzzySearch(tgtTitle, 0); 
+                i != -1; i = fuzzySearch(tgtTitle, i + 1))
+            {
+                numFound++;
+                printItem(i);
+            }
+            if (numFound == 0)
+                a++;
+            else
+                b++;
+
+            int index;
+            fflush(stdin);
+
+            if (index < 0 || index >= numItem)
+            {
+                continue;
+            }
+
+            int cmd2 = inputCommand();
+
+            if (cmd2 == 1)
+            // ...
+            {
+                char temp = inputItemWithComparison(index);
+
+                if (confirm("y"))
+                {
+                    editItemByIndex(index, temp);
+                }
+                else
+                {
+                }
+                continue;
+            }
+            else if (cmd2 == 2)
+            // ...
+            {
+                
+                if (confirm("y"))
+                {
+                    removeItemByIndex(index);
+                }
+                else
+                {
+                }
+                continue;
+            }
+            else if (cmd2 == 0)
+            // ...
+            {
+                continue;
+            }
+            else
+            // ...
+            {
+                continue;
+            }
+        }
+        else if (cmd == 4)
+        // ...
+        {
+            if (confirm("y"))
+            {
+                clear();
+                save();
+            }
+            else
+            {
+            }
+            continue;
+        }
+        else if (cmd == 0)
+        // ...
+        {
+            break;
+        }
+        else
+        // ...
+        {
+            continue;
+        }
+    }
+
+    // ...
+
+    return 0;
+}

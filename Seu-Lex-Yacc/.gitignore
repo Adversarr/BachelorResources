@@ -1,0 +1,10 @@
+.idea
+cmake-build**
+cmake-build-debug
+cmake-build-relwithdebinfo-xcode-clang
+cmake-build-relwithdebinfo
+build
+.vscode/**
+.cache/**
+test4.output
+.vs/**

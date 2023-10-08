@@ -1,0 +1,658 @@
+@article{Courant1943VariationalMF,
+  title={Variational methods for the solution of problems of equilibrium and vibrations},
+  author={Richard Courant},
+  journal={Bulletin of the American Mathematical Society},
+  year={1943},
+  volume={49},
+  pages={1-23}
+}
+
+@phdthesis{mc-phdthesis,
+author = {Li, Minchen},
+year = {2020},
+month = {12},
+pages = {},
+title = {Robust And Accurate Simulation Of Elastodynamics And Contact}
+}
+
+@article{wangCCD2021,
+author = {Wang, Bolun and Ferguson, Zachary and Schneider, Teseo and Jiang, Xin and Attene, Marco and Panozzo, Daniele},
+title = {A Large-Scale Benchmark and an Inclusion-Based Algorithm for Continuous Collision Detection},
+year = {2021},
+issue_date = {October 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {40},
+number = {5},
+issn = {0730-0301},
+
+
+abstract = {We introduce a large-scale benchmark for continuous collision detection (CCD) algorithms, composed of queries manually constructed to highlight challenging degenerate cases and automatically generated using existing simulators to cover common cases. We use the benchmark to evaluate the accuracy, correctness, and efficiency of state-of-the-art continuous collision detection algorithms, both with and without minimal separation.We discover that, despite the widespread use of CCD algorithms, existing algorithms are (1) correct but impractically slow; (2) efficient but incorrect, introducing false negatives that will lead to interpenetration; or (3) correct but over conservative, reporting a large number of false positives that might lead to inaccuracies when integrated in a simulator.By combining the seminal interval root finding algorithm introduced by Snyder in 1992 with modern predicate design techniques, we propose a simple and efficient CCD algorithm. This algorithm is competitive with state-of-the-art methods in terms of runtime while conservatively reporting the time of impact and allowing explicit tradeoff between runtime efficiency and number of false positives reported.},
+journal = {ACM Trans. Graph.},
+month = {sep},
+articleno = {188},
+numpages = {16},
+keywords = {physically based animation, Continuous collision detection, computational geometry}
+}
+
+@article{liCIPC2021,
+author = {Li, Minchen and Kaufman, Danny M. and Jiang, Chenfanfu},
+title = {Codimensional Incremental Potential Contact},
+year = {2021},
+issue_date = {August 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {40},
+number = {4},
+issn = {0730-0301},
+
+
+journal = {ACM Trans. Graph.},
+month = {jul},
+articleno = {170},
+numpages = {24},
+keywords = {constrained optimization, mixed-dimensional elastodynamics, contact mechanics, strain limiting}
+}
+
+@article{andrewsContactFrictionSimulation2021,
+  title = {Contact and Friction Simulation for Computer Graphics},
+  booktitle = {{{ACM SIGGRAPH}} 2021 {{Courses}}},
+  author = {Andrews, Sheldon and Erleben, Kenny},
+  date = {2021-08-09},
+  pages = {1--124},
+  publisher = {{ACM}},
+  location = {{Virtual Event USA}},
+  
+
+
+  eventtitle = {{{SIGGRAPH}} '21: {{Special Interest Group}} on {{Computer Graphics}} and {{Interactive Techniques Conference}}},
+  isbn = {978-1-4503-8361-5},
+  langid = {english}
+}
+
+@article{liuProjDyn2014,
+author = {Bouaziz, Sofien and Martin, Sebastian and Liu, Tiantian and Kavan, Ladislav and Pauly, Mark},
+title = {Projective Dynamics: Fusing Constraint Projections for Fast Simulation},
+year = {2014},
+issue_date = {July 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {33},
+number = {4},
+issn = {0730-0301},
+
+
+abstract = {We present a new method for implicit time integration of physical systems. Our approach builds a bridge between nodal Finite Element methods and Position Based Dynamics, leading to a simple, efficient, robust, yet accurate solver that supports many different types of constraints. We propose specially designed energy potentials that can be solved efficiently using an alternating optimization approach. Inspired by continuum mechanics, we derive a set of continuum-based potentials that can be efficiently incorporated within our solver. We demonstrate the generality and robustness of our approach in many different applications ranging from the simulation of solids, cloths, and shells, to example-based simulation. Comparisons to Newton-based and Position Based Dynamics solvers highlight the benefits of our formulation.},
+journal = {ACM Trans. Graph.},
+month = {jul},
+articleno = {154},
+numpages = {11},
+keywords = {continuum mechanics, implicit Euler method, physics-based animation, position based dynamics}
+}
+
+@article{brackbillFlip1986,
+author = {Brackbill, J U and Ruppel, H M},
+title = {FLIP: A Method for Adaptively Zoned, Particle-in-Cell Calculations of Fluid Flows in Two Dimensions},
+year = {1986},
+issue_date = {Aug. 1986},
+publisher = {Academic Press Professional, Inc.},
+address = {USA},
+volume = {65},
+number = {2},
+issn = {0021-9991},
+
+
+journal = {J. Comput. Phys.},
+month = {aug},
+pages = {314–343},
+numpages = {30}
+}
+
+@article{bargteilIntroductionPhysicsbasedAnimation2020,
+  title = {An Introduction to Physics-Based Animation},
+  booktitle = {{{SIGGRAPH Asia}} 2020 {{Courses}}},
+  author = {Bargteil, Adam W. and Shinar, Tamar and Kry, Paul G.},
+  date = {2020-12-04},
+  series = {{{SA}} '20},
+  pages = {1--57},
+  publisher = {{Association for Computing Machinery}},
+  location = {{New York, NY, USA}},
+  
+
+
+  abstract = {Physics-based animation has emerged as a core area of computer graphics finding widespread application in the film and video game industries as well as in areas such as virtual surgery, virtual reality, and training simulations. This course introduces students and practitioners to fundamental concepts in physics-based animation, placing an emphasis on breadth of coverage and providing a foundation for pursuing more advanced topics and current research in the area. The course focuses on imparting practical knowledge and intuitive understanding rather than providing detailed derivations of the underlying mathematics. The course is suitable for someone with no background in physics-based animation---the only prerequisites are basic calculus, linear algebra, and introductory physics. We begin with a simple, and complete, example of a mass-spring system, introducing the principles behind physics-based animation: mathematical modeling and numerical integration. From there, we systematically present the mathematical models commonly used in physics-based animation beginning with Newton's laws of motion and conservation of mass, momentum, and energy. We then describe the underlying physical and mathematical models for animating rigid bodies, soft bodies, and fluids. Then we describe how these continuous models are discretized in space and time, covering Lagrangian and Eulerian formulations, spatial discretizations and interpolation, and explicit and implicit time integration. In the final section, we discuss commonly used constraint formulations and solution methods.},
+  isbn = {978-1-4503-8112-3},
+  keywords = {animation,dynamics/simulation,research}
+}
+
+@incollection{boffiImmersedBoundaryMethod2003,
+  title = {- {{The}} Immersed Boundary Method: A Finite Element Approach},
+  shorttitle = {- {{The}} Immersed Boundary Method},
+  booktitle = {Computational {{Fluid}} and {{Solid Mechanics}} 2003},
+  author = {Boffi, Daniele and Gastaldi, Lucia},
+  editor = {Bathe, K. J.},
+  date = {2003-01-01},
+  pages = {1263--1266},
+  publisher = {{Elsevier Science Ltd}},
+  location = {{Oxford}},
+  
+
+
+  abstract = {This chapter discusses a modification of the immersed boundary (IB) method based on a finite element approximation of the fluid. The chapter also presents some theoretical considerations and two-dimensional numerical examples that confirm the good behavior of the computed solutions. The original IB method uses finite differences to approximate the Navier–Stokes equations. The IB method is at the same time a mathematical formulation and a numerical scheme. It is usually done with the original finite difference formulation. A suitable modification of the IB method is introduced that makes use of finite elements and gave a first contribution toward its analysis. The influence of the elastic force of the immersed boundary on the whole system is also examined in the chapter.},
+  isbn = {978-0-08-044046-0},
+  langid = {english}
+}
+
+@article{boydDistributedOptimizationStatistical2010,
+  title = {Distributed {{Optimization}} and {{Statistical Learning}} via the {{Alternating Direction Method}} of {{Multipliers}}},
+  author = {Boyd, Stephen},
+  date = {2010},
+  journaltitle = {Foundations and Trends® in Machine Learning},
+  shortjournal = {FNT in Machine Learning},
+  volume = {3},
+  number = {1},
+  pages = {1--122},
+  issn = {1935-8237, 1935-8245},
+  
+
+
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/EFNTXC82/Boyd - 2010 - Distributed Optimization and Statistical Learning .pdf}
+}
+
+@book{bridsonFluidSimulationComputer2015,
+  title = {Fluid {{Simulation}} for {{Computer Graphics}}},
+  author = {Bridson, Robert},
+  date = {2015-09-25},
+  year = {2015},
+  edition = {2},
+  publisher = {{A K Peters/CRC Press}},
+  location = {{New York}},
+
+
+  abstract = {A practical introduction, the second edition of Fluid Simulation for Computer Graphics shows you how to animate fully three-dimensional incompressible flow. It covers all the aspects of fluid simulation, from the mathematics and algorithms to implementation, while making revisions and updates to reflect changes in the field since the first edition.},
+  pagetotal = {276},
+  file = {/Users/yangjerry/Zotero/storage/B2CJR69E/fluid-simulation-computer-graphics-robert-bridson.html}
+}
+
+@article{ExtendedPartitionedMethod,
+author = {Akbay, Muzaffer and Nobles, Nicholas and Zordan, Victor and Shinar, Tamar},
+title = {An Extended Partitioned Method for Conservative Solid-Fluid Coupling},
+year = {2018},
+issue_date = {August 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {37},
+number = {4},
+issn = {0730-0301},
+
+
+abstract = {We present a novel extended partitioned method for two-way solid-fluid coupling, where the fluid and solid solvers are treated as black boxes with limited exposed interfaces, facilitating modularity and code reusability. Our method achieves improved stability and extended range of applicability over standard partitioned approaches through three techniques. First, we couple the black-box solvers through a small, reduced-order monolithic system, which is constructed on the fly from input/output pairs generated by the solid and fluid solvers. Second, we use a conservative, impulse-based interaction term to couple the solid and fluid rather than typical pressure-based forces. We show that both of these techniques significantly improve stability and reduce the number of iterations needed for convergence. Finally, we propose a novel boundary pressure projection method that allows for the partitioned simulation of a fully enclosed fluid coupled to a dynamic solid, a scenario that has been problematic for partitioned methods. We demonstrate the benefits of our extended partitioned method by coupling Eulerian fluid solvers for smoke and water to Lagrangian solid solvers for volumetric and thin deformable and rigid objects in a variety of challenging scenarios. We further demonstrate our method by coupling a Lagrangian SPH fluid solver to a rigid body solver.},
+journal = {ACM Trans. Graph.},
+month = {jul},
+articleno = {86},
+numpages = {12},
+keywords = {solid-fluid coupling, partitioned simulation, reduced-order model}
+}
+
+@online{ExtendedPartitionedMethoda,
+  title = {An Extended Partitioned Method for Conservative Solid-Fluid Coupling | {{ACM Transactions}} on {{Graphics}}},
+
+
+}
+
+@article{RobustTreatment,
+author = {Bridson, Robert and Fedkiw, Ronald and Anderson, John},
+title = {Robust Treatment of Collisions, Contact and Friction for Cloth Animation},
+year = {2002},
+issue_date = {July 2002},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {3},
+issn = {0730-0301},
+
+
+abstract = {We present an algorithm to efficiently and robustly process collisions, contact and friction in cloth simulation. It works with any technique for simulating the internal dynamics of the cloth, and allows true modeling of cloth thickness. We also show how our simulation data can be post-processed with a collision-aware subdivision scheme to produce smooth and interference free data for rendering.},
+journal = {ACM Trans. Graph.},
+month = {jul},
+pages = {594–603},
+numpages = {10},
+keywords = {collision response, contacts, static friction, cloth, collision detection, kinetic friction, physically based animation}
+}
+
+@article{FastContinuousCollision,
+author = {Tang, Min and Manocha, Dinesh and Tong, Ruofeng},
+title = {Fast Continuous Collision Detection Using Deforming Non-Penetration Filters},
+year = {2010},
+isbn = {9781605589398},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+
+
+abstract = {We present a novel culling algorithm that uses deforming non-penetration filters to improve the performance of continuous collision detection (CCD) algorithms. The underlying idea is to use a simple and effective filter that reduces both the number of false positives and the elementary tests between the primitives. This filter is derived from the coplanarity condition and can be easily combined with other methods used to accelerate CCD. We have implemented the algorithm and tested its performance on many non-rigid simulations. In practice, we can reduce the number of false positives significantly and improve the overall performance of CCD algorithms by 1.5--8.2x.},
+booktitle = {Proceedings of the 2010 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games},
+pages = {7–13},
+numpages = {7},
+location = {Washington, D.C.},
+series = {I3D '10}
+}
+
+@article{ihmsenParallelSPHImplementation2011,
+  title = {A {{Parallel SPH Implementation}} on {{Multi-Core CPUs}}},
+  author = {Ihmsen, Markus and Akinci, Nadir and Becker, Markus and Teschner, Matthias},
+  date = {2011-03},
+  journaltitle = {Computer Graphics Forum},
+  volume = {30},
+  number = {1},
+  pages = {99--112},
+  issn = {01677055},
+  
+
+
+  abstract = {This paper presents a parallel framework for simulating fluids with the Smoothed Particle Hydrodynamics (SPH) method. For low computational costs per simulation step, efficient parallel neighbourhood queries are proposed and compared. To further minimize the computing time for entire simulation sequences, strategies for maximizing the time step and the respective consequences for parallel implementations are investigated. The presented experiments illustrate that the parallel framework can efficiently compute large numbers of time steps for large scenarios. In the context of neighbourhood queries, the paper presents optimizations for two efficient instances of uniform grids, that is, spatial hashing and index sort. For implementations on parallel architectures with shared memory, the paper discusses techniques with improved cache‐hit rate and reduced memory transfer. The performance of the parallel implementations of both optimized data structures is compared. The proposed solutions focus on systems with multiple CPUs. Benefits and challenges of potential GPU implementations are only briefly discussed.},
+  langid = {english}
+}
+
+@book{InteriorPointMethods2005,
+  title={Interior Point Methods for Linear Optimization},
+  author={Roos, C. and Terlaky, T. and Vial, J.P.},
+  isbn={9780387263786},
+  lccn={2005049785},
+
+  year={2005},
+  publisher={Springer US}
+}
+
+
+@article{jiangAffineParticleincellMethod2015,
+  title = {The Affine Particle-in-Cell Method},
+  author = {Jiang, Chenfanfu and Schroeder, Craig and Selle, Andrew and Teran, Joseph and Stomakhin, Alexey},
+  date = {2015-07-27},
+  year = {2015},
+  journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {34},
+  number = {4},
+  pages = {51:1--51:10},
+  issn = {0730-0301},
+  
+
+
+  abstract = {Hybrid Lagrangian/Eulerian simulation is commonplace in computer graphics for fluids and other materials undergoing large deformation. In these methods, particles are used to resolve transport and topological change, while a background Eulerian grid is used for computing mechanical forces and collision responses. Particle-in-Cell (PIC) techniques, particularly the Fluid Implicit Particle (FLIP) variants have become the norm in computer graphics calculations. While these approaches have proven very powerful, they do suffer from some well known limitations. The original PIC is stable, but highly dissipative, while FLIP, designed to remove this dissipation, is more noisy and at times, unstable. We present a novel technique designed to retain the stability of the original PIC, without suffering from the noise and instability of FLIP. Our primary observation is that the dissipation in the original PIC results from a loss of information when transferring between grid and particle representations. We prevent this loss of information by augmenting each particle with a locally affine, rather than locally constant, description of the velocity. We show that this not only stably removes the dissipation of PIC, but that it also allows for exact conservation of angular momentum across the transfers between particles and grid.},
+  keywords = {coupling,FLIP,fluids,MPM,physically-based modeling,PIC}
+}
+
+@article{jiangAngularMomentumConserving2017,
+  title = {An Angular Momentum Conserving Affine-Particle-in-Cell Method},
+  author = {Jiang, Chenfanfu and Schroeder, Craig and Teran, Joseph},
+  date = {2017-06},
+  journaltitle = {Journal of Computational Physics},
+  shortjournal = {Journal of Computational Physics},
+  volume = {338},
+  pages = {137--164},
+  issn = {00219991},
+  
+
+
+  langid = {english}
+}
+
+@article{jiangMaterialPointMethod2016a,
+  title = {The Material Point Method for Simulating Continuum Materials},
+  booktitle = {{{ACM SIGGRAPH}} 2016 {{Courses}}},
+  author = {Jiang, Chenfanfu and Schroeder, Craig and Teran, Joseph and Stomakhin, Alexey and Selle, Andrew},
+  date = {2016-07-24},
+  pages = {1--52},
+  publisher = {{ACM}},
+  location = {{Anaheim California}},
+  
+
+
+  eventtitle = {{{SIGGRAPH}} '16: {{Special Interest Group}} on {{Computer Graphics}} and {{Interactive Techniques Conference}}},
+  isbn = {978-1-4503-4289-6},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/M9EX22FS/Jiang et al. - 2016 - The material point method for simulating continuum.pdf}
+}
+
+@article{kimDynamicDeformablesImplementation2022a,
+  title = {Dynamic Deformables: Implementation and Production Practicalities (Now with Code!)},
+  shorttitle = {Dynamic Deformables},
+  booktitle = {{{ACM SIGGRAPH}} 2022 {{Courses}}},
+  author = {Kim, Theodore and Eberle, David},
+  date = {2022-08-02},
+  pages = {1--259},
+  publisher = {{ACM}},
+  location = {{Vancouver British Columbia Canada}},
+  
+
+
+  eventtitle = {{{SIGGRAPH}} '22: {{Special Interest Group}} on {{Computer Graphics}} and {{Interactive Techniques Conference}}},
+  isbn = {978-1-4503-9362-1},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/HU2UB4NR/Kim and Eberle - 2022 - Dynamic deformables implementation and production.pdf}
+}
+
+@article{kockaraCollisionDetectionSurvey2007,
+  title = {Collision Detection: {{A}} Survey},
+  shorttitle = {Collision Detection},
+  booktitle = {2007 {{IEEE International Conference}} on {{Systems}}, {{Man}} and {{Cybernetics}}},
+  author = {Kockara, S. and Halic, T. and Iqbal, K. and Bayrak, C. and Rowe, Richard},
+  date = {2007-10},
+  pages = {4046--4051},
+  publisher = {{IEEE}},
+  location = {{Montreal, QC, Canada}},
+  
+
+
+  abstract = {A process of determining whether two or more bodies are making contact at one or more points is called collision detection or intersection detection. Collision detection is inseparable part of the computer graphics, surgical simulations, and robotics. There are varieties of methods for collision detection. We will review some of the most common ones. Algorithms for contact determination can be grouped into two general parts: broad-phase and narrow-phase. This paper provides a comprehensive classification of a collision detection literature into the two phases. Moreover, we have attempted to explain some of the existing algorithms which are not easy to interpret. Also, we have tried to keep sections self-explanatory without sacrificing depth of coverage.},
+  eventtitle = {2007 {{IEEE International Conference}} on {{Systems}}, {{Man}} and {{Cybernetics}}},
+  isbn = {978-1-4244-0990-7 978-1-4244-0991-4},
+  langid = {english}
+}
+
+@article{koschierSmoothedParticleHydrodynamics2019,
+  title = {Smoothed {{Particle Hydrodynamics Techniques}} for the {{Physics Based Simulation}} of {{Fluids}} and {{Solids}}},
+  author = {Koschier, Dan and Bender, Jan and Solenthaler, Barbara and Teschner, Matthias},
+  date = {2019},
+  journaltitle = {Eurographics 2019 - Tutorials},
+  eprint = {2009.06944},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  pages = {41 pages},
+  issn = {1017-4656},
+  
+
+
+  abstract = {Graphics research on Smoothed Particle Hydrodynamics (SPH) has produced fantastic visual results that are unique across the board of research communities concerned with SPH simulations. Generally, the SPH formalism serves as a spatial discretization technique, commonly used for the numerical simulation of continuum mechanical problems such as the simulation of fluids, highly viscous materials, and deformable solids. Recent advances in the field have made it possible to efficiently simulate massive scenes with highly complex boundary geometries on a single PC [Com16b, Com16a]. Moreover, novel techniques allow to robustly handle interactions among various materials [Com18,Com17]. As of today, graphics-inspired pressure solvers, neighborhood search algorithms, boundary formulations, and other contributions often serve as core components in commercial software for animation purposes [Nex17] as well as in computer-aided engineering software [FIF16]. This tutorial covers various aspects of SPH simulations. Governing equations for mechanical phenomena and their SPH discretizations are discussed. Concepts and implementations of core components such as neighborhood search algorithms, pressure solvers, and boundary handling techniques are presented. Implementation hints for the realization of SPH solvers for fluids, elastic solids, and rigid bodies are given. The tutorial combines the introduction of theoretical concepts with the presentation of actual implementations.},
+  keywords = {Computer Science - Graphics}
+}
+
+@article{koschierSurveySPHMethods2022,
+  title = {A {{Survey}} on {{SPH Methods}} in {{Computer Graphics}}},
+  author = {Koschier, Dan and Bender, Jan and Solenthaler, Barbara and Teschner, Matthias},
+  date = {2022-05},
+  journaltitle = {Computer Graphics Forum},
+  shortjournal = {Computer Graphics Forum},
+  volume = {41},
+  number = {2},
+  pages = {737--760},
+  issn = {0167-7055, 1467-8659},
+  
+
+
+  abstract = {Throughout the past decades, the graphics community has spent major resources on the research and development of physics simulators on the mission to computer‐generate behaviors achieving outstanding visual effects or to make the virtual world indistinguishable from reality. The variety and impact of recent research based on Smoothed Particle Hydrodynamics (SPH) demonstrates the concept's importance as one of the most versatile tools for the simulation of fluids and solids. With this survey, we offer an overview of the developments and still‐active research on physics simulation methodologies based on SPH that has not been addressed in previous SPH surveys. Following an introduction about typical SPH discretization techniques, we provide an overview over the most used incompressibility solvers and present novel insights regarding their relation and conditional equivalence. The survey further covers recent advances in implicit and particle‐based boundary handling and sampling techniques. While SPH is best known in the context of fluid simulation we discuss modern concepts to augment the range of simulatable physical characteristics including turbulence, highly viscous matter, deformable solids, as well as rigid body contact handling. Besides the purely numerical approaches, simulation techniques aided by machine learning are on the rise. Thus, the survey discusses recent data‐driven approaches and the impact of differentiable solvers on artist control. Finally, we provide context for discussion by outlining existing problems and opportunities to open up new research directions.},
+  langid = {english}
+}
+
+@article{lanMedialIPCAccelerated2021,
+  title = {Medial {{IPC}}: Accelerated Incremental Potential Contact with Medial Elastics},
+  shorttitle = {Medial {{IPC}}},
+  author = {Lan, Lei and Yang, Yin and Kaufman, Danny and Yao, Junfeng and Li, Minchen and Jiang, Chenfanfu},
+  date = {2021-08-31},
+  journaltitle = {ACM Transactions on Graphics},
+  journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {40},
+  number = {4},
+  pages = {1--16},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  abstract = {We propose a framework of efficient nonlinear deformable simulation with both fast continuous collision detection and robust collision resolution. We name this new framework               Medial IPC               as it integrates the merits from medial elastics, for an efficient and versatile reduced simulation, as well as incremental potential contact, for a robust collision and contact resolution. We leverage medial axis transform to construct a kinematic subspace. Instead of resorting to projective dynamics, we use classic hyperelastics to embrace real-world nonlinear materials. A novel reduced continuous collision detection algorithm is presented based on the medial mesh. Thanks to unique geometric properties of medial axis and medial primitives, we derive closed-form formulations for identifying between-primitive collision within the reduced medial space. In the meantime, the implicit barrier energy that generates necessary repulsion forces for collision resolution is also formulated with the medial coordinate. In other words, Medial IPC exploits a universal reduced coordinate for simulation, continuous self-/collision detection, and IPC-based collision resolution. Continuous collision detection also allows more aggressive time stepping. In addition, we carefully implement our system with a heterogeneous CPU-GPU deployment such that massively parallelizable computations are carried out on the GPU while few sequential computations are on the CPU. Such implementation also frees us from generating training poses for selecting Cubature points and pre-computing their weights. We have tested our method on complicated deformable models and collision-rich simulation scenarios. Due to the reduced nature of our system, the computation is faster than fullspace IPC or other fullspace methods using continuous collision detection by at least one order. The simulation remains high-quality as the medial subspace captures intriguing and local deformations with sufficient realism.},
+  langid = {english}
+}
+
+@article{lanPenetrationfreeProjectiveDynamics2022,
+  title = {Penetration-Free Projective Dynamics on the {{GPU}}},
+  author = {Lan, Lei and Ma, Guanqun and Yang, Yin and Zheng, Changxi and Li, Minchen and Jiang, Chenfanfu},
+  date = {2022-07-22},
+  journaltitle = {ACM Transactions on Graphics},
+  journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {41},
+  number = {4},
+  pages = {69:1--69:16},
+  issn = {0730-0301},
+  
+
+
+  abstract = {We present a GPU algorithm for deformable simulation. Our method offers good computational efficiency and penetration-free guarantee at the same time, which are not common with existing techniques. The main idea is an algorithmic integration of projective dynamics (PD) and incremental potential contact (IPC). PD is a position-based simulation framework, favored for its robust convergence and convenient implementation. We show that PD can be employed to handle the variational optimization with the interior point method e.g., IPC. While conceptually straightforward, this requires a dedicated rework over the collision resolution and the iteration modality to avoid incorrect collision projection with improved numerical convergence. IPC exploits a barrier-based formulation, which yields an infinitely large penalty when the constraint is on the verge of being violated. This mechanism guarantees intersection-free trajectories of deformable bodies during the simulation, as long as they are apart at the rest configuration. On the downside, IPC brings a large amount of nonlinearity to the system, making PD slower to converge. To mitigate this issue, we propose a novel GPU algorithm named A-Jacobi for faster linear solve at the global step of PD. A-Jacobi is based on Jacobi iteration, but it better harvests the computation capacity on modern GPUs by lumping several Jacobi steps into a single iteration. In addition, we also re-design the CCD root finding procedure by using a new minimum-gradient Newton algorithm. Those saved time budgets allow more iterations to accommodate stiff IPC barriers so that the result is both realistic and collision-free. Putting together, our algorithm simulates complicated models of both solids and shells on the GPU at an interactive rate or even in real time.},
+  keywords = {barrier function,CCD,GPU,iterative solver,physics-based simulation}
+}
+
+@article{liBFEMPInterpenetrationFreeMPMFEM2022,
+  title = {{{BFEMP}}: {{Interpenetration-Free MPM-FEM Coupling}} with {{Barrier Contact}}},
+  shorttitle = {{{BFEMP}}},
+  author = {Li, Xuan and Fang, Yu and Li, Minchen and Jiang, Chenfanfu},
+  date = {2022-02},
+  journaltitle = {Computer Methods in Applied Mechanics and Engineering},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  shortjournal = {Computer Methods in Applied Mechanics and Engineering},
+  volume = {390},
+  eprint = {2108.03349},
+  eprinttype = {arxiv},
+  pages = {114350},
+  issn = {00457825},
+  
+
+
+  abstract = {This paper introduces BFEMP, a new approach for monolithically coupling the Material Point Method (MPM) with the Finite Element Method (FEM) through barrier energy-based particle-mesh frictional contact using a variational time-stepping formulation. The fully implicit time integration of the coupled system is recast into a barrier-augmented unconstrained nonlinear optimization problem. A modified line-search Newton’s method is adopted to strictly prevent material points from penetrating the FEM domain, ensuring convergence and feasibility regardless of the time step size or the mesh resolutions. The proposed coupling scheme also reduces to a new approach for imposing separable frictional kinematic boundaries for MPM when all nodal displacements in the FEM domain are prescribed with Dirichlet boundary conditions. Compared to standard implicit time integration, the extra algorithmic components associated with the contact treatment only depend on simple point-segment (or point-triangle in 3D) geometric queries which robustly handle arbitrary FEM mesh boundaries represented with codimension-1 simplices. Experiments and analyses are performed to demonstrate the robustness and accuracy of the proposed method.},
+  langid = {english},
+  keywords = {Computer Science - Graphics,Mathematics - Numerical Analysis,Physics - Computational Physics}
+}
+
+@article{liCodimensionalIncrementalPotential2021,
+  title = {Codimensional Incremental Potential Contact},
+  author = {Li, Minchen and Kaufman, Danny M. and Jiang, Chenfanfu},
+  date = {2021-08-31},
+  journaltitle = {ACM Transactions on Graphics},journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {40},
+  number = {4},
+  pages = {1--24},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  langid = {english}
+}
+
+@article{liIncrementalPotentialContact2020,
+  title = {Incremental Potential Contact: Intersection-and Inversion-Free, Large-Deformation Dynamics},
+  shorttitle = {Incremental Potential Contact},
+  author = {Li, Minchen and Ferguson, Zachary and Schneider, Teseo and Langlois, Timothy and Zorin, Denis and Panozzo, Daniele and Jiang, Chenfanfu and Kaufman, Danny M.},
+  date = {2020-08-31},
+  journaltitle = {ACM Transactions on Graphics},journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {39},
+  number = {4},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  abstract = {Contacts weave through every aspect of our physical world, from daily household chores to acts of nature. Modeling and predictive computation of these phenomena for solid mechanics is important to every discipline concerned with the motion of mechanical systems, including engineering and animation. Nevertheless, efficiently time-stepping accurate and consistent simulations of real-world contacting elastica remains an outstanding computational challenge. To model the complex interaction of deforming solids in contact we propose Incremental Potential Contact (IPC) - a new model and algorithm for variationally solving implicitly time-stepped nonlinear elastodynamics. IPC maintains an intersection- and inversion-free trajectory regardless of material parameters, time step sizes, impact velocities, severity of deformation, or boundary conditions enforced.             Constructed with a custom nonlinear solver, IPC enables efficient resolution of time-stepping problems with separate, user-exposed accuracy tolerances that allow independent specification of the physical accuracy of the dynamics and the geometric accuracy of surface-to-surface conformation. This enables users to decouple, as needed per application, desired accuracies for a simulation's dynamics and geometry.             The resulting time stepper solves contact problems that are intersection-free (and thus robust), inversion-free, efficient (at speeds comparable to or faster than available methods that lack both convergence and feasibility), and accurate (solved to user-specified accuracies). To our knowledge this is the first implicit time-stepping method, across both the engineering and graphics literature that can consistently enforce these guarantees as we vary simulation parameters.                            In an extensive comparison of available simulation methods, research libraries and commercial codes we confirm that available engineering and computer graphics methods, while each succeeding admirably in custom-tuned regimes, often fail with instabilities, egregious constraint violations and/or inaccurate and implausible solutions, as we vary input materials, contact numbers and time step. We also exercise IPC across a wide range of existing and new benchmark tests and demonstrate its accurate solution over a broad sweep of reasonable time-step sizes and beyond (up to               h               = 2s) across challenging large-deformation, large-contact stress-test scenarios with meshes composed of up to 2.3M tetrahedra and processing up to 498K contacts per time step. For applications requiring high-accuracy we demonstrate tight convergence on all measures. While, for applications requiring lower accuracies, e.g. animation, we confirm IPC can ensure feasibility and plausibility even when specified tolerances are lowered for efficiency.},
+  langid = {english}
+}
+
+@article{liuFastSimulationMassspring2013,
+  title = {Fast Simulation of Mass-Spring Systems},
+  author = {Liu, Tiantian and Bargteil, Adam W. and O'Brien, James F. and Kavan, Ladislav},
+  date = {2013-11},
+  journaltitle = {ACM Transactions on Graphics},
+  journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {32},
+  number = {6},
+  pages = {1--7},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  abstract = {We describe a scheme for time integration of mass-spring systems that makes use of a solver based on block coordinate descent. This scheme provides a fast solution for classical linear (Hookean) springs. We express the widely used implicit Euler method as an energy minimization problem and introduce spring directions as auxiliary unknown variables. The system is globally linear in the node positions, and the non-linear terms involving the directions are strictly local. Because the global linear system does not depend on run-time state, the matrix can be pre-factored, allowing for very fast iterations. Our method converges to the same final result as would be obtained by solving the standard form of implicit Euler using Newton’s method. Although the asymptotic convergence of Newton’s method is faster than ours, the initial ratio of work to error reduction with our method is much faster than Newton’s. For real-time visual applications, where speed and stability are more important than precision, we obtain visually acceptable results at a total cost per timestep that is only a fraction of that required for a single Newton iteration. When higher accuracy is required, our algorithm can be used to compute a good starting point for subsequent Newton’s iteration.},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/49CUZUPN/Liu et al. - 2013 - Fast simulation of mass-spring systems.pdf}
+}
+
+@article{liuQuasiNewtonMethodsRealtime,
+  title = {Quasi-{{Newton Methods}} for {{Real-time Simulation}} of {{Hyperelastic Materials}}},
+  author = {Liu, Tiantian},
+  journaltitle = {ACM Transactions on Graphics},
+  journal = {ACM Transactions on Graphics},
+  langid = {english},
+  year = 2017,
+  file = {/Users/yangjerry/Zotero/storage/63EIY84C/Liu - Quasi-Newton Methods for Real-time Simulation of H.pdf}
+}
+
+@article{macklinUnifiedParticlePhysics2014a,
+  title = {Unified Particle Physics for Real-Time Applications},
+  author = {Macklin, Miles and Müller, Matthias and Chentanez, Nuttapong and Kim, Tae-Yong},
+  date = {2014-07-27},
+  journaltitle = {ACM Transactions on Graphics},
+  journal = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {33},
+  number = {4},
+  pages = {1--12},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  abstract = {We present a unified dynamics framework for real-time visual effects. Using particles connected by constraints as our fundamental building block allows us to treat contact and collisions in a unified manner, and we show how this representation is flexible enough to model gases, liquids, deformable solids, rigid bodies and cloth with two-way interactions. We address some common problems with traditional particle-based methods and describe a parallel constraint solver based on position-based dynamics that is efficient enough for real-time applications.},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/FSJWMTJA/Macklin et al. - 2014 - Unified particle physics for real-time application.pdf}
+}
+
+@book{michaelScientificComputingIntroductory2018,
+  title = {Scientific {{Computing}}: {{An Introductory Survey}}},
+  author = {Michael, T. Heath},
+  date = {2018},
+  year = {2018},
+  publisher = {{SIAM}},
+  location = {{Philadelphia}},
+
+
+  pagetotal = {567},
+  file = {/Users/yangjerry/Zotero/storage/B4U5XJ8X/scicomp.html}
+}
+
+@article{musethVDBHighresolutionSparse2013,
+  title = {{{VDB}}: {{High-resolution}} Sparse Volumes with Dynamic Topology},
+  shorttitle = {{{VDB}}},
+  author = {Museth, Ken},
+  date = {2013-06},
+  journaltitle = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {32},
+  number = {3},
+  pages = {1--22},
+  issn = {0730-0301, 1557-7368},
+  
+
+
+  abstract = {We have developed a novel hierarchical data structure for the efficient representation of sparse, time-varying volumetric data discretized on a 3D grid. Our “VDB”, so named because it is a Volumetric, Dynamic grid that shares several characteristics with B+trees, exploits spatial coherency of time-varying data to separately and compactly encode data values and grid topology. VDB models a virtually infinite 3D index space that allows for cache-coherent and fast data access into sparse volumes of high resolution. It imposes no topology restrictions on the sparsity of the volumetric data, and it supports fast (average               O               (1)) random access patterns when the data are inserted, retrieved, or deleted. This is in contrast to most existing sparse volumetric data structures, which assume either static or manifold topology and require specific data access patterns to compensate for slow random access. Since the VDB data structure is fundamentally hierarchical, it also facilitates adaptive grid sampling, and the inherent acceleration structure leads to fast algorithms that are well-suited for simulations. As such, VDB has proven useful for several applications that call for large, sparse, animated volumes, for example, level set dynamics and cloud modeling. In this article, we showcase some of these algorithms and compare VDB with existing, state-of-the-art data structures.},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/I2A8X3W9/Museth - 2013 - VDB High-resolution sparse volumes with dynamic t.pdf}
+}
+
+@article{overbyADMMProjectiveDynamics2017,
+  title = {{{ADMM Projective Dynamics}}: {{Fast Simulation}} of {{Hyperelastic Models}} with {{Dynamic Constraints}}},
+  shorttitle = {{{ADMM Projective Dynamics}}},
+  author = {Overby, Matthew and Brown, George E. and Li, Jie and Narain, Rahul},
+  date = {2017-10-01},
+  journaltitle = {IEEE Transactions on Visualization and Computer Graphics},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  shortjournal = {IEEE Trans. Visual. Comput. Graphics},
+  volume = {23},
+  number = {10},
+  pages = {2222--2234},
+  issn = {1077-2626},
+  
+
+
+  abstract = {We apply the alternating direction method of multipliers (ADMM) optimization algorithm to implicit time integration of elastic bodies, and show that the resulting method closely relates to the recently proposed projective dynamics algorithm. However, as ADMM is a general purpose optimization algorithm applicable to a broad range of objective functions, it permits the use of nonlinear constitutive models and hard constraints while retaining the speed, parallelizability, and robustness of projective dynamics. We further extend the algorithm to improve the handling of dynamically changing constraints such as sliding and contact, while maintaining the benefits of a constant, prefactored system matrix. We demonstrate the benefits of our algorithm on several examples that include cloth, collisions, and volumetric deformable bodies with nonlinear elasticity and skin sliding effects.},
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/8MZ3TMZG/Overby et al. - 2017 - ADMM Projective Dynamics Fast Simulation of Hyper.pdf}
+}
+
+@article{tangContinuousPenaltyForces2012,
+  title = {Continuous Penalty Forces},
+  author = {Tang, Min and Manocha, Dinesh and Otaduy, Miguel A. and Tong, Ruofeng},
+  date = {2012-07-01},
+  journaltitle = {ACM Transactions on Graphics},
+  shortjournal = {ACM Trans. Graph.},
+  volume = {31},
+  number = {4},
+  pages = {107:1--107:9},
+  issn = {0730-0301},
+  
+
+
+  abstract = {We present a simple algorithm to compute continuous penalty forces to determine collision response between rigid and deformable models bounded by triangle meshes. Our algorithm computes a well-behaved solution in contrast to the traditional stability and robustness problems of penalty methods, induced by force discontinuities. We trace contact features along their deforming trajectories and accumulate penalty forces along the penetration time intervals between the overlapping feature pairs. Moreover, we present a closed-form expression to compute the continuous and smooth collision response. Our method has very small additional overhead compared to previous penalty methods, and can significantly improve the stability and robustness. We highlight its benefits on several benchmarks.},
+  keywords = {contact force,continuous collision detection,penalty-based methods,robust collision handling}
+}
+
+@online{xieContactProxySplitting2023,
+  title = {A {{Contact Proxy Splitting Method}} for {{Lagrangian Solid-Fluid Coupling}}},
+  author = {Xie, Tianyi and Li, Minchen and Yang, Yin and Jiang, Chenfanfu},
+  date = {2023-01-05},
+  eprint = {2301.01976},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  citedate = {2023-01-05},
+  
+
+
+  abstract = {We present a robust and efficient method for simulating Lagrangian solid-fluid coupling based on a new operator splitting strategy. We use variational formulations to approximate fluid properties and solid-fluid interactions, and introduce a unified two-way coupling formulation for SPH fluids and FEM solids using interior point barrier-based frictional contact. We split the resulting optimization problem into a fluid phase and a solid-coupling phase using a novel time-splitting approach with augmented contact proxies, and propose efficient custom linear solvers. Our technique accounts for fluids interaction with nonlinear hyperelastic objects of different geometries and codimensions, while maintaining an algorithmically guaranteed non-penetrating criterion. Comprehensive benchmarks and experiments demonstrate the efficacy of our method.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Graphics}
+}
+
+@book{xuHighefficiencyDiscretizedImmersed2022,
+  title = {A High-Efficiency {{Discretized Immersed Boundary Method}} for Moving Boundaries in Incompressible Flows},
+  author = {Xu, Dong and Liu, Jianing and Wu, Yunfeng and Ji, Chunning},
+  date = {2022-09-07},
+  
+}
+
+@article{xuHighefficiencyDiscretizedImmersed2023,
+  title = {A High-Efficiency Discretized Immersed Boundary Method for Moving Boundaries in Incompressible Flows},
+  author = {Xu, Dong and Liu, Jianing and Wu, Yunfeng and Ji, Chunning},
+  date = {2023-01-30},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {13},
+  number = {1},
+  pages = {1699},
+  issn = {2045-2322},
+  
+
+
+  langid = {english},
+  file = {/Users/yangjerry/Zotero/storage/3RI5WH7D/Xu et al. - 2023 - A high-efficiency discretized immersed boundary me.pdf}
+}
+
+ @MISC{eigenweb,
+  author = {Gael Guennebaud and Benit Jacob and others},
+  title = {Eigen v3},
+  howpublished = {http://eigen.tuxfamily.org},
+  year = {2010}
+ }
+
+ @article{huangTaskflow2022,
+author = {Huang, Tsung-Wei and Lin, Dian-Lun and Lin, Chun-Xun and Lin, Yibo},
+title = {Taskflow: A Lightweight Parallel and Heterogeneous Task Graph Computing System},
+year = {2022},
+issue_date = {June 2022},
+publisher = {IEEE Press},
+volume = {33},
+number = {6},
+issn = {1045-9219},
+
+
+journal = {IEEE Trans. Parallel Distrib. Syst.},
+month = {jun},
+pages = {1303–1320},
+numpages = {18}
+}

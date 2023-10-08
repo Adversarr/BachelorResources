@@ -1,0 +1,1 @@
+var a: array[1..4, 3 .. 5] of integer;

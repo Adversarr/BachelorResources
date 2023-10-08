@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+echo "Welcome to Seu-Lex-Yacc"
+cmake -S . -B build -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+cmake --build build --target SeuLexYacc --config Release --
+./build/standalone/SeuLexYacc
+cmake --build build --target output --config Release --
+# backup
+cp ./build/standalone/output ./build/standalone/output_no_precompile_backup
+./build/standalone/output
+
+if [ "$1" == "pc" ]; then
+  cmake --build build --target output --config Release --
+  ./build/standalone/output
+fi
+echo "Done."
+
